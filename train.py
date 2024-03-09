@@ -26,6 +26,7 @@ text_splitter = RecursiveCharacterTextSplitter(
     )
 chunks = text_splitter.split_text(text=text)
 
+
 embeddings = OpenAIEmbeddings()
 
 VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
@@ -33,6 +34,9 @@ VectorStore.save_local("vectorstore","index") # Save the vectorstore to disk
 
 llm = OpenAI()
 chain = load_qa_chain(llm=llm, chain_type="stuff")
+
+
+
 
 
 

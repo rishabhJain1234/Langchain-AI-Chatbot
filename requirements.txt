@@ -1,4 +1,7 @@
 langchain
 python-dotenv
-streamlit
 openai
+PyPDF2
+faiss
+langchain_openai
+faiss-cpu
