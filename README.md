@@ -12,18 +12,24 @@ This project aims to create an interactive chatbot capable of answering queries 
 
 The OpenAI API key is utilized to interact with the powerful language model, allowing the chatbot to understand and generate human-like responses to user queries.
 
-###Tokens
+### Tokens
 
 The dataset is breaken into tokens with token size of 1000 characters and having an overlap of 300 characters.
 
 ### Lanchain Model
 
-Lanchain is utilised to train the model on the tokens and creating OpenAI embeddings which can be used to efficiently search for context within these embeddings. By leveraging Lanchain, the chatbot can quickly retrieve relevant information from the trained dataset, ensuring accurate and contextually appropriate responses.
+Lanchain is utilised to train the model on the tokens and creating OpenAI embeddings which can be used to efficiently search (semantic search) for context within these embeddings. By leveraging Lanchain, the chatbot can quickly retrieve relevant information from the trained dataset, ensuring accurate and contextually appropriate responses.
 
+### FAISS
 
+FAISS is a vector store database which stores the OpenAi embeddings.
 
-This project is licensed under the [MIT License](LICENSE).
+## TECHSTACK
 
----
+### Django
 
-Feel free to explore the capabilities of the IIT Roorkee AI Chatbot and embark on a journey to discover more about this esteemed institution! If you have any questions or feedback, don't hesitate to reach out. Enjoy chatting!
+Django is utilised to create a robust backend for the chatbot.
+
+### React
+
+React is used to create the front end for the chatbot.
