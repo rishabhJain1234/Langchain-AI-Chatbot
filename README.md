@@ -43,7 +43,7 @@ Lanchain is utilised to train the model on the tokens and creating OpenAI embedd
 
 FAISS is a vector store database which stores the OpenAi embeddings.
 
-## TECHSTACK
+## Techstack
 
 ### Django
 
